@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemrograman Web</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+            </ul>
+        </nav>
+         <div class="jumbotron">
+            <h1>Pemrograman Web</h1>
+            <p>Pengenalan Dasar HTML dan CSS untuk Pemula</p>
+        </div> 
+    </header>
+
+    <main>
+        <div id="content">
+            <article class="card" id="html">
+                <h2>HTML</h2>
+                <h3>Pendahuluan</h3>
+                <ol>
+                    <li id="html_1"><b>Apa itu HTML?</b></li>
+                    <p>
+                        <b>HTML</b>, singkatan dari <i>Hyper Text Markup Language</i>, merupakan bahasa <i>markup</i> standar yang digunakan untuk membangun struktur halaman web serta menggambarkan kontennya melalui sejumlah elemen. 
+                        Elemen-elemen ini memberikan identifikasi pada berbagai bagian konten seperti judul, paragraf, tautan, dan lainnya, sambil memberikan petunjuk kepada browser mengenai cara menampilkan konten tersebut. 
+                        Dengan menggunakan HTML, para pengembang web dapat membentuk tampilan halaman yang terstruktur dan memungkinkan pengguna untuk berinteraksi dengan berbagai elemen dan informasi.
+                    </p>
+                    <li id="html_2"><b>Contoh Dokumen Sederhana HTML</b></li>
+                    <p>
+                        <code>
+                            <span>&lt;!DOCTYPE html&gt;</span><br>
+                            <span>&lt;html&gt;</span><br>
+    
+                            <span>&nbsp;&nbsp;&lt;head&gt;</span><br>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Judul Halaman&lt;/title&gt;</span><br>
+                            <span>&nbsp;&nbsp;&lt;/head&gt;</span><br>
+    
+                            <span>&nbsp;&nbsp;&lt;body&gt;</span><br>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Judul Pertama Saya&lt;/h1&gt;</span><br>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraf pertama saya.&lt;/p&gt;</span><br>
+                            <span>&nbsp;&nbsp;&lt;/body&gt;</span><br>
+    
+                            <span>&lt;/html&gt;</span>
+                        </code>
+                    </p>
+                    <p>
+                        Deklarasi <code><b><span>&lt;!DOCTYPE html&gt;</span></b></code> digunakan untuk menetapkan bahwa dokumen ini adalah dokumen HTML5. 
+                        Elemen <code><b><span>&lt;html&gt;</span></b></code> berperan sebagai elemen induk atau elemen root dari halaman HTML. 
+                        Elemen <code><b><span>&lt;head&gt;</span></b></code> digunakan untuk menyimpan informasi meta tentang halaman. 
+                        Elemen <code><span><b>&lt;title&gt;</b></span></code> mengatur judul yang akan muncul pada bilah judul browser atau tab halaman tersebut. 
+                        Elemen <code><span><b>&lt;body&gt;</b></span></code> menandai area dokumen yang tampak pada layar, menjadi wadah untuk semua elemen konten yang terlihat, seperti judul, paragraf, gambar, tautan, tabel, daftar, dan lainnya. 
+                        Selain itu, elemen <code><span><b>&lt;h1&gt;</b></span></code> dan <code><b>&lt;p&gt;</b></code> digunakan untuk menetapkan judul besar dan paragraf secara berurutan sesuai dengan struktur konten halaman.
+                    </p>
+                </ol>
+                <p>Sumber<a href="https://www.w3schools.com/html/default.asp" target="_blank"> w3schools</a></p>
+            </article>
+
+            <article class="card hidden" id="css" >
+                <h2>CSS</h2>
+                <h3>Pendahuluan</h3>
+                <ol>
+                    <li id="css_1"><b>Apa itu CSS?</b></li>
+                    <p>
+                        CSS, atau <i>Cascading Style Sheets</i>, adalah bahasa pemrograman yang digunakan untuk mengatur tampilan elemen-elemen HTML di layar, kertas, atau media lainnya. 
+                        Dengan CSS, kita dapat menghemat banyak pekerjaan karena dapat mengontrol tata letak dari beberapa halaman web sekaligus. 
+                        Gaya-gaya eksternal disimpan dalam file CSS terpisah untuk memudahkan pengelolaan dan penggunaan ulang.
+                    </p>
+                    <li id="css_2"><b>Contoh Dokumen Sederhana HTML dengan <i>style</i> CSS</b></li>
+                    <p>
+                        <code>
+                            <span>&lt;!DOCTYPE html&gt;</span><br>
+                            <span>&lt;html&gt;</span><br>
+    
+                            <span>&nbsp;&nbsp;&lt;head&gt;</span><br>
+                            <span>&nbsp;&nbsp;&lt;style&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;p { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                            &nbsp;&nbsp;&lt;/style&gt;</span><br>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Judul Halaman&lt;/title&gt;</span><br>
+                            <span>&nbsp;&nbsp;&lt;/head&gt;</span><br>
+    
+                            <span>&nbsp;&nbsp;&lt;body&gt;</span><br>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Judul Pertama Saya&lt;/h1&gt;</span><br>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraf pertama saya.&lt;/p&gt;</span><br>
+                            <span>&nbsp;&nbsp;&lt;/body&gt;</span><br>
+    
+                            <span>&lt;/html&gt;</span>
+                        </code>
+                    </p>
+                    <p>
+                        Dalam aturan CSS di atas dalam blok elemen <span>&lt;style&gt;, <b>p</b> adalah <i>selector</i> yang mengacu pada semua elemen paragraf dalam dokumen HTML. 
+                        Kemudian, dalam blok deklarasi, kita menentukan bahwa properti <b>text-align</b> diatur ke <b>center</b> untuk membuat teks menjadi rata tengah dan properti <b>color</b> diatur ke <b>red</b> untuk memberi teks warna merah. 
+                        Dengan demikian, semua elemen &lt;p&gt; dalam dokumen akan menerapkan gaya ini.
+                    </p>
+                </ol>
+                <p>Sumber<a href="https://www.w3schools.com/css/default.asp" target="_blank"> w3schools</a></p>
+            </article>
+        </div>
+        
+        <aside>           
+            <div id="html">
+                <div class="card">
+                    <img src="assets/img/logo/html-5.png" alt="Logo HTML">
+                    <ul>
+                        <li><a class="html-link" href="#html_1">Apa itu HTML?</a></li>
+                        <li><a class="html-link" href="#html_2">Contoh Dokumen Sederhana HTML</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hidden" id="css">
+                <div class="card">
+                    <img src="assets/img/logo/css-3.png" alt="Logo CSS">
+                    <ul>
+                        <li><a class="css-link" href="#css_1">Apa itu CSS?</a></li>
+                        <li><a class="css-link" href="#css_2">Contoh Dokumen Sederhana HTML dengan <i>style</i> CSS</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="card">
+                <img src="assets/img/profile.jpeg" alt="Muhamad Aprizal Hardi">
+                <span>Muhamad Aprizal Hardi</span>
+                <span><i>aprizalrizalzal@gmail.com</i></span>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>Created with by <a href="https://www.dicoding.com/users/aprizalrizalzal/academies" target="_blank">Muhamad Aprizal Hardi</a></p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
