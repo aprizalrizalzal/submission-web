@@ -20,6 +20,7 @@ nav {
     padding: 4px;
     position: sticky;
     top: 0;
+    transition: top 0.3s;
 }
 
 nav ul {
