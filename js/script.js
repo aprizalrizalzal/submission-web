@@ -6,11 +6,8 @@ let lastScrollY = window.scrollY;
 
 window.addEventListener('scroll', () => { 
     const navbar = document.getElementById('navbar'); 
-    if (window.scrollY > lastScrollY) {
-        navbar.classList.add('hidden'); 
-    } else {
-        navbar.classList.remove('hidden'); 
-    } lastScrollY = window.scrollY; 
+    navbar.classList.toggle('hidden', window.scrollY > lastScrollY); 
+    lastScrollY = window.scrollY; 
 });
 
 function setActiveLink(link) {
@@ -20,10 +17,7 @@ function setActiveLink(link) {
 
 function showElements(elements, linkId) {
     elements.forEach(element => {
-        element.classList.add('hidden');
-        if (element.getAttribute('id') === linkId) {
-            element.classList.remove('hidden');
-        }
+        element.classList.toggle('hidden', element.getAttribute('id') !== linkId);
     });
 }
 
